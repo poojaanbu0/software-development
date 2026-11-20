@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+
+        </style>
+    </head>
+<body>
+    <H2>Form creation using forms tag</H2>
+
+    <form action="/action_page.php" target="_blank" method="post" autocomplete = "off">
+        <fieldset>
+            <legend>Personal</legend>
+        <label for="fname">First name:</label><br>
+        <input type = "text" id = "fname" name = "fname"><br>
+        <label for = "aging">ageingg:</label><br>
+        <input type = "number" id = "aging" name = 'enter valid age'><br>
+        <input type = "submit" value="clicked">
+        <input type = "button" value = "button" ><br>
+        </fieldset>
+       
+        <input type = "radio" id = "fname" name = "fname" >
+        <label for="fname">HTML</label><br>
+        <input type = "radio" id = "css" name = "fav_lang " >
+        <label for = "fname">css</label>
+        <br>
+        <br>
+
+        <input type = "checkbox" id = "html" name = "fav_lang" >
+        <label for="html">HTML</label><br>
+        <input type = "checkbox" id = "css" name = "fav_lang" >
+        <label for = "css">css</label>
+        <br>
+        <input type = "checkbox" id = "js" name = "fav_lang" >
+        <label for= "js">js</label><br>
+        <br>
+
+        <fieldset>
+            <legend>cars</legend>
+        <label for="cars">cars:</label><br>
+        <select id= 'cars' name ='cars' >
+         <option value="audi">audi</option>
+         <option value="swift" selected>swift</option>
+        </select>
+         <button type = "button" onclick = "alert('done successfully')">submit</button>
+         </fieldset>
+<br>
+         <input list ="browsers" name = "browsers"><br>
+         <input type = "color" id = "color" name = "color" value = "#ff0000">
+         <datalist id = "browsers">
+            <option value = "firefox">
+            <option value = "safari">
+            <option value = "explorer">
+         </datalist>
+
+    </form>
+    <br>
+    <form action="/action_page.php" id = "form2" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        10
+        <input type= "range" id = "a" name = "a" value = "20" min = '10' max = '100'>
+        100+
+        <input type = "number" id = "b" name = "b" value = "20">
+        = 
+        <output name = "x" for ="a b"></output>
+        <br><br>
+        <input type = "submit" value="click"><br>
+        <input type = "date" id = "date" name = "date" >
+        </form>
+
+        <lable for="lname">last name</lable>
+        <input type = "text" id="lname" name = "lname" form="form2">
+    
+</body>
+</html>

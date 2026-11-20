@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            border-radius: 50%;
+            transition: all 3s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="square" style="background-color: red; width: 100px; height: 100px; transition: all 4s linear;"></div>
+    <br>
+    <button id="button">Click me</button>
+
+    <script>
+        let bttn = document.getElementById("button");
+        let msquare = document.getElementById("square");
+
+        // bttn.addEventListener("click",Circle);
+
+        // function Circle() {
+        //     msquare.style.borderRadius = "50%";
+
+        //     bttn.removeEventListener("click", Circle);
+        //     bttn.addEventListener("click", Square);
+        // }
+
+        // function Square() {
+        //     msquare.style.borderRadius = "0%";
+
+        //     bttn.removeEventListener("click", Square);
+        //     bttn.addEventListener("click", Circle);
+        // }
+
+        bttn.addEventListener("click", () => {
+            console.log("clicked")
+            msquare.classList.toggle("ball")
+        })
+    //  function a(x, bfunc){
+    //     //    100lines
+    //     bfunc(8);
+    //  }
+    //  function b(z){
+    //             console.log("i am z" + z);
+    //        }
+    //  a(10,b);
+
+    
+    </script>
+</body>
+
+</html>

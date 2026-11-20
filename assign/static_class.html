@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Class Static Methods</h1>
+<p>To use the "myCar" object inside the static method, you can send it as parameter.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name,year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x){
+    return x - this.year;
+  }
+  static hello(x) {
+    return "Hello " + x.name;
+  }
+}
+
+const date = new Date();
+const yr = date.getFullYear();
+
+const myCar = new Car("Ford", 2003);
+document.getElementById("demo").innerHTML = myCar.age(yr) + "<br>" + Car.hello(myCar);
+</script>
+
+</body>
+</html>

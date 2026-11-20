@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FLEX</title>
+<style>
+.container {
+  display: flex;
+  height: 500px;
+  flex-flow: row-reverse  wrap-reverse;
+
+  background-color: DodgerBlue;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;  
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div style =" order: 2; flex-grow: 2; align-self: center;">1</div>
+  <div style = "order: 1; flex-grow: 2;">2</div>
+  <div style = "order: 4; flex-grow: 2;">3</div>  
+  <div  style = "order: 5; flex-grow: 1;">4</div>
+  <div  style = "order: 10; flex-grow: 2; align-self:flex-end;">5</div>
+  <div  style = "order: 6; flex-grow: 2;">6</div>
+  <div  style = "order: 7; flex-grow: 2;">7</div>
+  <div  style = "order: 8; flex-grow: 2;">8</div>
+  <div  style = "order: 9; flex-grow: 2;">9</div>
+  <div  style = "order: 3; flex-grow: 2;">10</div>
+</div>
+
+
+
+</body>
+</html>
+
+

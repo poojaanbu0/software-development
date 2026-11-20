@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>design</title>
+        <style>
+body
+{
+    margin:0;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background: #293462;
+    position:relative;
+}
+
+.head {
+    width: 310px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #FE5F55;
+    position: relative;
+    overflow: hidden;
+    left: 350px;
+    top: 240px;
+}
+.mouth {
+    width: 100%;
+    height: 300px; 
+    background-color: #A34E43; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0% 72%, 15% 77%, 35% 79%, 55% 80%, 70% 77%, 
+    87% 74%, 100% 72%, 99% 98%, 77% 100%, 52% 100%, 27% 100%, 1% 99%);
+
+}
+
+.nose_left{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #293462;
+position: absolute;
+left: 510px;
+top: 350px;
+}
+.nose_right{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #293462;
+position: absolute;
+left: 470px;
+top: 350px;
+}
+.outer{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#FE5F55;
+    position:absolute;
+    left:380px;
+    top:180px;
+}
+.hole{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#FFF1C1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    left:400px;
+    top:200px;
+}
+
+.inside{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background: #293462;
+}
+.outer1{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#FE5F55;
+    position:absolute;
+    left:520px;
+    top:180px;
+}
+.hole1{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#FFF1C1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    left:540px;
+    top:200px;
+}
+
+.inside1{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background: #293462;
+}
+        </style>
+    </head>
+    <body>
+
+<div class="container">
+
+   <div class="head">
+     <div class = 'mouth'></div>
+    </div>
+
+   <div class = 'nose_left'></div>
+   <div class = 'nose_right'></div>
+
+    <div class="outer"></div>
+
+    <div class="hole">
+        <div class="inside"></div>
+    </div>
+ 
+    <div class="outer1"></div>
+
+      <div class="hole1">
+        <div class="inside1"></div>
+      </div>
+</div>
+    </body>
+</html

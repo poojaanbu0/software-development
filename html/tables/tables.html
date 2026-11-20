@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> tables</title>
+<style>
+    h1
+    {
+        color: green;
+        text-align: center;
+    }
+    table,tr,th,td{
+    
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        margin:auto;
+        
+    }
+    th:nth-child(even),td:nth-child(odd){
+        background-color: blue;
+    }
+    tr:nth-child(even){
+        background-color: black;
+        color:brown;
+    }
+</style>
+</head>
+<body>
+<h1>GeeksforGeeks</h1>
+<table style='width:45%;'>
+    <caption style= "margin-bottom: 20px; font-size: 25px;"><strong>Bordered Table </strong></caption>
+
+    <tr style = "background-color: lightgray; text-align: center;">
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Runs</th>
+        <th>Centuries</th>
+        <th>streak rate</th>
+        <th>avg</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Rohit</td>
+        <td>100</td>
+        <td>97</td>
+        <td>25</td>
+        <td>97</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Virat</td>
+        <td>50</td>
+        <td>96</td>
+        <td>2</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Rahul</td>
+        <td>100</td>
+        <td>87</td>
+        <td>3</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Rishab</td>
+        <td>200</td>
+        <td>60</td>
+        <td>21</td>
+        <td>32</td>
+    </tr>
+</table>
+</body>
+</html>

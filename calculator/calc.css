@@ -1,0 +1,55 @@
+body{
+    min-height: 100vh;
+
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.display{
+ height:40px;
+ padding: 10px;
+
+ border: 1px solid goldenrod;
+ border-radius: 10px;
+
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+
+ font-size: 20px;
+
+ margin-bottom: 12px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+    
+}
+button{
+    height: 30px;
+    padding: 10px;
+    
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item1{
+   grid-column: 1/span 2;
+}
+#equal
+{
+    grid-column:3/span 2 ;
+}

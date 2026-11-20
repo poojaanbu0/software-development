@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#293462;
+}
+
+.scene{
+    position:relative;
+    width:600px;
+    height:500px;
+}
+
+/* ---------- HEAD ---------- */
+
+.head{
+    position:absolute;
+    width:430px;
+    height:315px;
+    background:#FE5F55;
+    left:85px;
+    top:105px;
+
+    border-radius:
+        48% 48%
+        38% 38%
+        /45% 45%
+        55% 55%;
+
+    overflow:hidden;
+}
+
+/* ---------- MOUTH ---------- */
+
+.mouth{
+    position:absolute;
+
+    width:540px;
+    height:240px;
+
+    background:#A64942;
+
+    border-radius:50%;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    bottom:-82px;
+}
+
+/* ---------- EYES ---------- */
+
+.eye{
+    position:absolute;
+    width:110px;
+    height:110px;
+
+    background:#FE5F55;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:5;
+}
+
+.eye.left{
+    left:130px;
+    top:42px;
+}
+
+.eye.right{
+    left:370px;
+    top:42px;
+}
+
+.white{
+    width:65px;
+    height:65px;
+
+    background:#FFF1C1;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.pupil{
+    width:22px;
+    height:22px;
+
+    background:#293462;
+
+    border-radius:50%;
+}
+
+/* ---------- NOSTRILS ---------- */
+
+.nose{
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    background:#293462;
+
+    border-radius:50%;
+
+    top:160px;
+}
+
+.nose.left{
+    left:188px;
+}
+
+.nose.right{
+    left:223px;
+}

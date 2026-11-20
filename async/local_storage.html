@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Browser Storage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
+        .container { display: flex; gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(32,0,1,0.5); flex: 1; }
+        input, button { padding: 10px; margin-top: 10px; width: 90%; display: block; border-radius: 4px; border: 1px solid #ccc; }
+        button { background-color: #007acc; color: white; cursor: pointer; border: none; font-weight: bold;}
+        button:hover { background-color: #005999; }
+        .output { margin-top: 15px; padding: 10px; background: #eef; border-left: 5px solid #007acc; min-height: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Local Storage vs Session Storage Studio</h1>
+    <p>Type data below, refresh the page, or close the tab to see the persistence difference!</p>
+
+    <div class="container">
+        <!-- LOCAL STORAGE CARD -->
+        <div class="card">
+            <h2>🏠 Local Storage</h2>
+            <p>Data stays forever unless deleted manually.</p>
+            <input type="text" id="localInput" placeholder="Type something to save permanently...">
+            <button onclick="saveLocal()">1. Save Data (.setItem)</button>
+            <button onclick="readLocal()">2. Read Data (.getItem)</button>
+            <button onclick="deleteLocal()">3. Delete Data (.removeItem)</button>
+            <div class="output" id="localOutput">No data loaded.</div>
+        </div>
+
+        <!-- SESSION STORAGE CARD -->
+        <div class="card">
+            <h2>⏳ Session Storage</h2>
+            <p>Data disappears when you close this tab.</p>
+            <input type="text" id="sessionInput" placeholder="Type something for this session only...">
+            <button onclick="saveSession()">1. Save Data (.setItem)</button>
+            <button onclick="readSession()">2. Read Data (.getItem)</button>
+            <button onclick="deleteSession()">3. Delete Data (.removeItem)</button>
+            <div class="output" id="sessionOutput">No data loaded.</div>
+        </div>
+    </div>
+
+    <script>
+        // --- LOCAL STORAGE FUNCTIONS ---
+        function saveLocal() {
+            const val = document.getElementById('localInput').value;
+            // .setItem(key, value) stores the string
+            localStorage.setItem('myLocalKey', val);
+            alert('Saved to Local Storage!');
+        }
+
+        function readLocal() {
+            // .getItem(key) retrieves the string
+            const storedVal = localStorage.getItem('myLocalKey');
+            document.getElementById('localOutput').innerText = storedVal ? `Stored: "${storedVal}"` : "No data found!";
+        }
+
+        function deleteLocal() {
+            // .removeItem(key) clears the specific key
+            localStorage.removeItem('myLocalKey');
+            document.getElementById('localOutput').innerText = "Data Deleted.";
+        }
+
+        // --- SESSION STORAGE FUNCTIONS ---
+        function saveSession() {
+            const val = document.getElementById('sessionInput').value;
+            // Uses the identical API structure as localStorage
+            sessionStorage.setItem('mySessionKey', val);
+            alert('Saved to Session Storage!');
+        }
+
+        function readSession() {
+            const storedVal = sessionStorage.getItem('mySessionKey');
+            document.getElementById('sessionOutput').innerText = storedVal ? `Stored: "${storedVal}"` : "No data found!";
+        }
+
+        function deleteSession() {
+            sessionStorage.removeItem('mySessionKey');
+            document.getElementById('sessionOutput').innerText = "Data Deleted.";
+        }
+    </script>
+</body>
+</html>

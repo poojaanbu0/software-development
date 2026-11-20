@@ -1,0 +1,91 @@
+body {
+    margin: 10px;
+    padding: 5px;
+    height: 100vh;
+    border: 10px solid greenyellow;
+    background-color: aqua;
+}
+*{
+    box-sizing: content-box;
+}
+a:hover {
+    background-color: aqua;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+a:visited {
+    color: black;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+a:active {
+    color: yellowgreen
+}
+
+div section {
+
+    color: red;
+
+}
+
+div div {
+    width: 200px;
+    background-color: violet;
+    text-align: center;
+    float: right;
+}
+
+div div h1 {
+
+    border: 10px solid black;
+}
+
+div ul {
+    list-style-type: disc;
+}
+
+div li {
+    background-color: pink;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: right;
+    text-align: center;
+    padding: 10px;
+
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: left;
+}
+
+li a:hover {
+    
+    color: yellow;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: white
+}
+
+p.dashed {
+    border: 3px solid black;
+    outline-style: dashed;
+    color: orchid;
+    width: 83%;
+}

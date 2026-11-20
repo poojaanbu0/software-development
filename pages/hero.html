@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hero section</title>
+        <link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+        <style> 
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                 margin: 0;
+            }
+            h2{
+                padding: 30px;
+                text-align: center;
+            }
+            h2 a {
+                text-decoration: none;
+                color: black;
+                font-family: sans-serif;
+                font-weight: lighter;
+                font-size: 35px;
+            }
+            h2 a span{
+                color: dodgerblue;
+            }
+            .navbar{
+                position: sticky;
+                top: 0;
+                display: flex;
+                background-color: white;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 60px;
+                float: center;
+            }
+           .links1{
+            display:flex;
+            align-items:center;
+            gap:35px;
+            list-style:none;
+            }
+           .links1 a{
+               color:black;
+             text-decoration: none;
+            }
+            .links1 a:hover{
+               color:green;
+             text-decoration: none;
+            }
+            .links1 .active{
+            color:#00c38a;
+             }
+            .button1{
+                background: lightgreen;
+                color:white;
+                border:none;
+                padding:10px 25px;
+                border-radius:25px;
+                width: 100px;
+                display: inline;
+                cursor:pointer;
+              }
+              .button1:hover{
+                background: white;
+                color:black;
+                border:1px solid turquoise;
+                padding:10px 25px;
+               border-radius:25px;
+                width: 100px;
+                cursor:pointer;
+              }
+              .hero-section{
+                 width:100%;
+                padding:60px 80px;
+         }
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.left{
+    width:35%;
+}
+
+.right{
+    width:65%;
+}
+.right img{
+    width:100%;
+    display:block;
+}
+.left h1{
+    font-size:72px;
+    font-family:sans-serif;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+       .left p{
+    font-size:22px;
+    color:#777;
+    line-height:1.8;
+    margin-bottom:35px;
+       } 
+        </style>
+    </head>
+    <body>
+        <h2>
+            <a href = '#hero.html'>Landerz<span>.</span></a>
+        </h2>
+        <nav class = 'navbar'>
+        <ul class = 'links1'> 
+            <li>
+                <a href = '#Home' style = 'color: green;' >Home</a>
+            </li>
+            <li>
+                <a href = '#Home' >Features</a>
+            </li>
+            <li>
+                <a href = '#Home' >About Us</a></li>
+            <li>
+                <a href = '#Home' >Testimonials</a></li>
+            <li>
+                <a href = '#Home' >Blog</a></li>
+            <li>
+                <a href = '#Home' >Contact</a></li>
+        </ul>
+        </nav>
+      <div class="hero-section">
+
+    <div class="hero-content">
+
+        <div class="left">
+            <h1>Grow Your Business Faster</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam assumenda ea quo cupiditate facere deleniti fuga
+                officia.
+            </p>
+
+            <button class="button1">Get Started</button>
+        </div>
+
+        <div class="right">
+            <img src="hero_image.png" alt="">
+        </div>
+
+    </div>
+
+</div>
+
+    </body>
+</html>
